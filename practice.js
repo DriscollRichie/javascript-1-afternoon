@@ -115,7 +115,12 @@ var dog = {
 
 //Code Here
 function looper(arr) {
-  var mySum = arr.filter(elem => elem % 2 !== 0 || elem >= 100);
+  var mySum = 0; 
+  arr.forEach(val => {
+    if (val % 2 !== 0 || val >= 100) {
+      mySum += val;
+    }
+  })
   return mySum;
 }
 
@@ -186,19 +191,19 @@ function pond() {
 //as strings
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let globalScope = ['duck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let bathroomScope = ['duck', 'rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let pondScope = ['duck', 'realDuck'];
 
 //I skipped this one because I didn't understand the question.
 
@@ -210,12 +215,11 @@ let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
 //function which returns your name.
 
   //Code Here
-  function outerFn() {
-    var anonFunc = function(name) {
-      return name;
-    }
-    return anonFunc;
+function outerFn() {
+  return function() {
+    return 'Richie';
   }
+};
   // What the instructor put:
   // function outerFn() {
   //   return function(){
