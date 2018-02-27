@@ -1,11 +1,5 @@
-//=========DO NOT TOUCH THIS CODE=========//
-var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
-//============Continue below=============//
-
-
 //+++++++++ Start Here! All problems are below. +++++++++//
 
-===
 //////////////////PROBLEM 1////////////////////
 
 //Create a function declaration called greeting that 
@@ -18,8 +12,6 @@ function greeting(name) {
   return 'Hello, ' + name;
 }
 
-
-
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
@@ -30,8 +22,6 @@ var newGreeting = function greeting(name) {
   return 'Hello, ' + name;
 }
 
-
-
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
@@ -40,7 +30,9 @@ var newGreeting = function greeting(name) {
 //Code Here
 var finalGreeting = (name) => 'Hello, ' + name;
 
-
+//=========DO NOT TOUCH THIS CODE=========//
+var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
+//============Continue below=============//
 
 //////////////////PROBLEM 4////////////////////  
 
